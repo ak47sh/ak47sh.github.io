@@ -5,6 +5,10 @@ a {
   a:hover {
     color: black;
   }
-  .linktrnsfrm:hover {
-    transform: scale(1.1,1.1);
-  }
+
+.grow { 
+  transition: transform .5s; 
+}
+.grow:hover { 
+  transform: scale(1.1); 
+}
