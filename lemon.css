@@ -12,3 +12,8 @@ a {
 .grow:hover { 
   transform: scale(1.1); 
 }
+
+#blackshading {
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+}
