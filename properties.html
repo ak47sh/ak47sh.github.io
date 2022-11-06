@@ -22,12 +22,54 @@
     <div class="my-4 mb-5 mt-5">
         <div class="container">
           <div class="d-flex justify-content-sm-start">
-            <div>
+            <div class="d-flex align-items-center">
               <img src="house1.png" style="height: 400px; width: 300px;">
             </div>
             <div class="ms-5">
               <h1 class="text-center">2410 Salem Creek Ct, Murfreesboro, TN 37128</h1>
-              <p1 class="ms-5 fs-5">Our open concept, 3-bedroom Hemingway townhome is a perfect fit for small familys and/or a small group of friends. This end located home features a spacious kitchen, dining, and great room area.  Well equipped kitchen with stainless appliance granite countertops and modern white cabinets.</p1>
+              <p1 class="text-center fs-5">Our open concept, 3-bedroom Hemingway townhome is a perfect fit for small familys and/or a small group of friends. This end located home features a spacious kitchen, dining, and great room area.  Well equipped kitchen with stainless appliance granite countertops and modern white cabinets.</p1>
+              <!-- Button trigger modal -->
+              <div class="text-center my-5">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ContactUs">
+                  Contact us about this property
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="ContactUs" tabindex="-1" aria-labelledby="ContactUsLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="ContactUsLabel">Contact Us</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <!--Form-->
+                      <div class="modal-body">
+                        <form action="https://formsubmit.co/akash.ni@pm.me" method="POST" class="row g-3">
+                          <div class="col-md-6">
+                            <input type="text" class="form-control" name="firstname" id="inputFname" placeholder="First Name" required>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="text" class="form-control" name="lastname" id="inputLname" placeholder="Last Name" required>
+                          </div>
+                          <div class="col-12">
+                            <input type="email" class="form-control" name="email" id="inputEmail" placeholder="User123@nimmathotarealty.com" required>
+                          </div>
+                          <div class="col-12">
+                            <input type="text" class="form-control" name="subject" id="inputSubject" placeholder="Subject" required>
+                          </div>
+                          <div class="col-12 ">
+                            <textarea type="text" class="form-control" name="message" id="inputMsg" rows="5" placeholder="Could I recieve more information about this property?" required></textarea>
+                          </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             </div>
           </div>
