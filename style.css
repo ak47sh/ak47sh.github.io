@@ -38,3 +38,9 @@ body {
   display: none;
 }
 
+.captionnoexceed {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
