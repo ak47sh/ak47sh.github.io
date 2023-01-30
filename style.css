@@ -44,3 +44,21 @@ body {
   white-space: nowrap;
 }
 
+.linkstyle:link {
+    color: white;
+}
+
+.linkstyle:visited {
+    color: white;
+}
+
+.linkstyle:hover {
+    color: rgb(158, 158, 158);
+}
+
+.linkstyle:active {
+    color: white;
+}
+
+
+
