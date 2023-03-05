@@ -28,3 +28,10 @@ body {
         transform: rotateX('0');
     }
 }
+
+.centerabousoulte {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
