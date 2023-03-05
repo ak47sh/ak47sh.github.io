@@ -34,9 +34,9 @@ document.addEventListener("DOMContentLoaded", function() {
       </div>
     </div>
   </nav>
-          `.trim();
+   `.trim();
     headerthing.classList.add("headerthing"); // add the "my-class" class
     document.body.insertBefore(headerthing, document.body.firstChild);
-
   });
+  
    
