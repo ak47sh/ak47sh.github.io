@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // code to run when the DOM is ready
     const headerthing = document.createElement("div");
     headerthing.innerHTML = `
-    <nav class="container navbar navbar-expand-xl navbar-dark border-bottom">
+    <nav class="container navbar navbar-expand-xxl py-3 navbar-dark border-bottom">
     <a href="index.html" class="navbar-brand me-5 text-decoration-none">
       <div style="color: white;" class="p-2">kasu</div>
     </a>
@@ -11,17 +11,17 @@ document.addEventListener("DOMContentLoaded", function() {
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <div class="navbar-nav centerabousoulte mx-auto" style="width: fit-content;">
-        <a href="about.html" class="nav-link text-decoration-none">
-          <div style="color: white;" class="p-2 ms-5 mx-4">about us</div>
+        <a href="investments.html" class="nav-link text-decoration-none">
+          <div style="color: white;" class="p-2 ms-5 mx-4">Investments</div>
         </a>
         <a href="stores.html" class="nav-link text-decoration-none">
-          <div style="color: white;" class="p-2 mx-4">stores</div>
+          <div style="color: white;" class="p-2 mx-4">Stores</div>
         </a>
         <a href="FAQ.html" class="nav-link text-decoration-none">
           <div style="color: white;" class="p-2 mx-4">FAQ</div>
         </a>
         <a href="contact.html" class="nav-link text-decoration-none">
-          <div style="color: white;" class="p-2 mx-4">contact us</div>
+          <div style="color: white;" class="p-2 mx-4">Contact us</div>
         </a>
       </div>
       <div class="navbar-nav ms-auto ml-auto">
