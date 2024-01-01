@@ -1,43 +1,132 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/rofl.css">
-    <script src="scripts/header.js"></script>
-  </head>
-  <body>
-    <div class="webtransitionin">
-    <!-- header -->
-    <div class="headerthing"></div>
-    <!-- content -->
-    <div class="container px-5 py-5">
-      <div class="row align-items-center py-5">
-        <div class="col-lg-6 text-center order-lg-first mb-3">
-          <h1 class="display-1 fw-bold lh-1 mb-2">Shop.</h1>
-          <h1 class="display-1 fw-bold lh-1 mb-2">Invest.</h1>
-          <h1 class="display-1 fw-bold lh-1 mb-2">Profit.</h1>
-        </div>
-        <div class="col-lg-6 order-lg-last">
-          <div class="text-center">
-            <img src="images/cyclething.png" class="d-block mx-auto img-fluid w-75" alt="Bootstrap Themes" width="500" height="500" loading="lazy">
-          </div>
-        </div>
-      </div>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--navbar-->
+    <div class="flex flex-row items-center space-x-20 justify-center border-b-2 py-8">
+        <div class="text-xl font-semibold">overview</div>
+        <div class="text-4xl">kubenu realty</div>
+        <div class="text-xl font-semibold">properties</div>
     </div>
-    <!--about us begin-->
-    <div class="text-center my-3 container" style="max-width: 50%;">
-      <div class="display-2 mb-2"> 
-        How it Works 
-      </div>
-      <div class="fw-light mb-2 fs-5" style="-webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; display: -webkit-box; max-height: 6em;">
-      We are a business that partners with other companies to invest in their products and share the profits with our customers. We first partner with other businesses that sell products or services that we believe in. When a customer purchases something from one of our partner businesses, we receive a percentage of the profits. We take the profits we earn from our partnerships and invest them in ways which deliver strong returns. Once we earn a return on our investments, we share the profits with our customers. At Kasu, we're committed to creating a business that benefits everyone involved.
-      </div>
-      <a class="text-decoration-none" style="color:white;" href="about.html">
-        <div class="fw-lighter"> learn more > </div>
-      </a>
+    <!--top bub-->
+    <div class="flex flex-row justify-between mx-14 mt-10">
+        <div class="rounded-xl w-48 h-24 shadow-lg border">
+            <div class="ms-4 text-xl font-medium mt-2"># of Properties</div>
+            <div class="ms-4 font-semibold">6</div>
+        </div>
+        <div class="rounded-xl w-48 h-24 shadow-lg border">
+            <div class="ms-4 text-xl font-medium mt-2">Portfolio Value</div>
+            <div class="ms-4 font-semibold">$2,054,000</div>
+        </div>
+        <div class="rounded-xl w-48 h-24 shadow-lg border">
+            <div class="ms-4 text-xl font-medium mt-2">Mortgage</div>
+            <div class="ms-4 font-semibold">content</div>
+        </div>
+        <div class="rounded-xl w-48 h-24 shadow-lg border">
+            <div class="ms-4 text-xl font-medium mt-2">Monthly Revenue</div>
+            <div class="ms-4 font-semibold">content</div>
+        </div>
+        <div class="rounded-xl w-48 h-24 shadow-lg border">
+            <div class="ms-4 text-xl font-medium mt-2">Monthly Expenses</div>
+            <div class="ms-4 font-semibold">content</div>
+        </div>
+        <div class="rounded-xl w-48 h-24 shadow-lg border">
+            <div class="ms-4 text-xl font-medium mt-2">P/L</div>
+            <div class="ms-4 font-semibold">content</div>
+        </div>
     </div>
-  </body>
+    <!--table-->
+    <div class="mx-14 rounded-lg mt-10 h-80 overflow-auto shadow-lg">
+        <table class="w-full table-auto border border-collapse ">
+            <thead>
+                <tr>
+                    <th class="px-4 py-3 border rounded-tl-lg text-left">Address</th>
+                    <th class="px-4 py-3 border text-left">Loan Amount</th>
+                    <th class="px-4 py-3 border text-left">Monthly Interest</th>
+                    <th class="px-4 py-3 border text-left">Interest Rate</th>
+                    <th class="px-4 py-3 border text-left">Monthly Revenue</th>
+                    <th class="px-4 py-3 border text-left">Monthly Expenses</th>
+                    <th class="px-4 py-3 border text-left">Lease Ending</th>
+                    <th class="px-4 py-3 border text-left">P/L</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border">
+                    <th class="px-4 py-3 border text-left" scope="row">3100 S. Manchester #324</th>
+                    <td class="px-4 py-3 border text-left">$0</td>
+                    <td class="px-4 py-3 border text-left">$0</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">$1,550</td>
+                    <td class="px-4 py-3 border text-left">$781</td>
+                    <td class="px-4 py-3 border text-left">06/30/2024</td>
+                    <td class="px-4 py-3 border text-left">+$769</td>
+                </tr>
+                <tr class="border">
+                    <th class="px-4 py-3 border text-left" scope="row">2410 Salem Creek Court</th>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                </tr>
+                <tr class="border">
+                    <th class="px-4 py-3 border text-left" scope="row">1788 Frodo Way</th>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                </tr>
+                <tr class="border">
+                    <th class="px-4 py-3 border text-left" scope="row">4415 Peggy Marie Avenue</th>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                </tr>
+                <tr class="border">
+                    <th class="px-4 py-3 border text-left" scope="row">4418 Peggy Marie Avenue</th>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                </tr>
+                <tr class="border">
+                    <th class="px-4 py-3 border text-left" scope="row">3100 S. Manchester #206</th>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                </tr>
+                <tr class="border">
+                    <th class="px-4 py-3 border text-left" scope="row">N/A</th>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                    <td class="px-4 py-3 border text-left">N/A</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
 </html>
