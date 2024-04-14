@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="mx-4 flex items-center justify-between py-4 md:hidden" >
+            <a href="index.html" class="flex items-center">
+              <img src="logo.svg" alt="Logo" class="w-20">
+            </a>
+            <button class="bg-red-400 py-1 px-2 rounded-full md:hidden focus:outline-none">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+            </div>
+            <ul class="hidden mx-12 lg:mx-48 py-5 md:flex flex-row">
+                <li class="me-8"><a href="index.html"><img style="width: 80px; height: 35px;" src="logo.svg"></a></li>
+                <li class="me-8 py-1 font-medium">Company</li>
+                <li class="group dropdown me-8 py-1 font-medium">
+                    <div>Services</div>
+                    <div class="group-hover:block dropdown-menu absolute hidden h-auto">
+                        <div class="rounded-lg w-72 gap-6 grid grid-cols-2 border border-neutral-300 shadow-xl bg-neutral-200 mt-2">
+                            <div class="py-1 flex bg-red-50">
+                                <a class="text-center">
+                                    Cybersecurity
+                                </a>
+                            </div>
+                            <div class="py-1 flex bg-red-50">
+                                <a class="text-center">
+                                    Network
+                                </a>
+                            </div>
+                        </div>  
+                    </div>
+                </li>
+                <li class="me-8 py-1 font-medium">Partners</li>
+                <li class="me-8 py-1 font-medium">
+                   <a class="decoration-none" href="careers.html">Careers</a> 
+                </li>
+                <li class="ml-auto bg-red-400 text-white px-4 py-1 rounded-full font-medium">
+                    <div>Contact</div>
+                </li>
+             </ul>
+        
+    </nav>
+
+</body>
+</html>
