@@ -1,59 +1,76 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  
 </head>
-<body class="bg-neutral-100">
-     <!--navbar-->
-     <ul class="mx-48 py-5 flex flex-row">
-        <li class="me-8"><a href="index.html"><img style="width: 80px; height: 35px;" src="logo.svg"></a>        </li>
-        <li class="me-8 py-1 font-medium">Company</li>
-        <li class="group dropdown me-8 py-1 font-medium">
-            <div>Services</div>
-            <div class="group-hover:block dropdown-menu absolute hidden h-auto">
-                <div class="rounded-lg w-72 gap-6 grid grid-cols-2 border border-neutral-300 shadow-xl bg-neutral-200 mt-2">
-                    <div class="py-1 flex bg-red-50">
-                        <a class="text-center">
-                            Cybersecurity
-                        </a>
-                    </div>
-                    <div class="py-1 flex bg-red-50">
-                        <a class="text-center">
-                            Network
-                        </a>
-                    </div>
-                </div>  
-            </div>
-        </li>
-        <li class="me-8 py-1 font-medium">Partners</li>
-        <li class="me-8 py-1 font-medium">
-           <a class="decoration-none" href="careers.html">Careers</a> 
-        </li>
-        <li class="ml-auto bg-red-400 px-4 py-1 rounded-full font-medium">
-            <div>Contact</div>
-        </li>
-     </ul>
-     <div class="mx-48 flex flex-row mt-16">
-        <div class="w-7/12 -orange-200">
-            <div class="text-8xl font-medium">Innovate.</div>
-            <div class="text-8xl font-medium">Integrate.</div>
-            <div class="text-8xl font-medium">Illuminate.</div>
-            <div class="text-lg mt-10">
-                <p>At TechInvents, we lead with innovation, integrate</p>
-                <p>cutting-edge solutions, and illuminate transformative</p>
-                <p>progress, all while setting the path to a smarter world.</p>        
-            </div>
-            <div class="flex mt-3 font-medium flex-row">
-                <div class="px-4 py-1 rounded-full bg-orange-300">Learn more ></div>
-                <div class="py-1 ms-5">Contact us ></div>
-            </div>
+<body class="bg-neutral-200 mx-8 md:mx-16 lg:mx-32">
+  <div class="flex flex-row items-center pt-8 pb-4">
+    <img class="w-20 h-12 md:me-8" src="logo.svg">
+    <button id="menuBtn" class="md:hidden ml-auto px-2 py-1 rounded-xl bg-[#ee3920]/75">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </button>
+    <div class="hidden md:block md:text-lg font-medium me-8 py-1">Company</div>
+    <div class="hidden md:block md:text-lg font-medium me-8 py-1">Services</div>
+    <div class="hidden md:block md:text-lg font-medium me-8 py-1">Partners</div>
+    <div class="hidden md:block md:text-lg font-medium me-8 py-1">Careers</div>
+    <div class="hidden md:block md:text-lg font-medium ml-auto bg-[#ee3920]/75 py-1 px-3 rounded-full">Contact</div>
+  </div>
+
+  <div id="curtainMenu" class="hidden bg-neutral-100 w-1/2 h-screen fixed top-0 right-0 z-10 shadow-2xl">
+    <button id="closeBtn" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+    <!-- Your curtain menu content goes here -->
+    <ul class="mt-12">
+      <li class="py-2 px-4 cursor-pointer hover:bg-gray-100">Company</li>
+      <li class="py-2 px-4 cursor-pointer hover:bg-gray-100">Services</li>
+      <li class="py-2 px-4 cursor-pointer hover:bg-gray-100">Partners</li>
+      <li class="py-2 px-4 cursor-pointer hover:bg-gray-100">Careers</li>
+    </ul>
+  </div>
+
+  <div class="flex flex-row">
+    <div class="flex mt-12 md:w-5/12">
+        <div class="text-7xl md:text-8xl font-medium">
+          <div class="">Innovate.</div>
+          <div class="">Integrate.</div>
+          <div class="">Illuminate.</div>
+          <div class="text-base md:text-xl md:w-[29rem] font-light mt-4">
+            <p>
+              At TechInvents, we lead with innovation, integrate
+              cutting-edge solutions, and illuminate transformative
+              progress, all while setting the path to a smarter world.
+            </p>        
+          </div>
+          <div class="flex-row flex text-base md:text-xl mt-8">
+            <div class="me-8 bg-[#d3d23d] px-3 rounded-lg flex">Learn more ></div>
+            <div class="me-8">Contact us</div>
+          </div>    
         </div>
-        <div class="w-5/12 -green-300">
-            a
-        </div>
-     </div>
+      </div>
+    <div class="hidden xl:flex md:w-7/12">
+        <img class="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRse_2DF7il9P6PJb9Gi0NApvTgzhJcG8SulmF5WV6jxA&s">
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const curtainMenu = document.getElementById('curtainMenu');
+    const closeBtn = document.getElementById('closeBtn');
+
+    menuBtn.addEventListener('click', () => {
+      curtainMenu.classList.toggle('hidden');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      curtainMenu.classList.add('hidden');
+    });
+  </script>
 </body>
 </html>
